@@ -4,12 +4,14 @@
 
 *{
   min-width: 0;
+  margin: 0;
+  padding: 0;
   font: inherit;
   font-family: "Ubuntu", sans-serif;
 
   transition: background-color 0.3s, color 0.3s;
 
-  font-size: 1rem; /* 1rem = 16px */
+  font-size: 16px; /* 1rem = 16px */
 }
 
 *, *::before, *::after{
@@ -24,7 +26,6 @@ img, video, svg{
 }
 
 body{
-  margin: 0;
   min-height: 100dvh;
 }
 
@@ -151,46 +152,47 @@ p, a{
   color: var(--color-text);
 }
 
-:is(select, button){
+:is(select, button, #presentation-article a){
   background-color: var(--color-elem);
 
   border-color: var(--color-elem-border);
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 1.25rem;
   border-width: 2px;
 
   color: var(--color-text);
 
-  padding: 3px 5px;
+  padding: 0.5rem;
+
+  height: 2.5rem;
 
   display: inline-flex;
   align-items: center;   /* centre verticalement */
   justify-content: center; /* (optionnel) centre horizontalement */
 }
 
-:is(select, button):hover{
+:is(select, button, #presentation-article a):hover{
   background-color: var(--color-elem-hovered);
   border-color: var(--color-elem-border-hovered);
 }
 
-:is(select, button):focus{  
+:is(select, button, #presentation-article a):focus{  
   outline: none;
   background-color: var(--color-elem-selected);
   border-color: var(--color-elem-border-hovered);
 }
 
 h1{
-  margin: 8px 0;
+  margin: 0px 0;
   width: auto;
-  text-align: center;
 }
 
 nav{
   display: flex;
   background-color: var(--color-subtitle-bg);
 
-  padding: 10px 20px;
-  margin: 10px 20px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 1rem;
 
   width: auto;
 
@@ -208,7 +210,7 @@ nav{
   border-style: solid;
 
   position: sticky;
-  top: 10px;
+  top: 0.75rem;
   z-index: 1000;
 }
 
@@ -220,3 +222,59 @@ nav > :nth-last-child(2) {
   margin-left: auto;
 }
 
+main{
+  padding: 1rem;
+  min-height: 40dvh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+main > img{
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: clamp(80px, 10dvw, 200px);
+}
+
+main > article{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+a{
+  display: flex;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+a > .icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-text);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+#link-github .icon{
+  -webkit-mask-image: url(resources/images/github.svg);
+  mask-image: url(resources/images/github.svg);
+}
+
+#link-linkedin .icon{
+  -webkit-mask-image: url(resources/images/linkedin.svg);
+  mask-image: url(resources/images/linkedin.svg);
+  mask-size: 1.125rem;
+}
