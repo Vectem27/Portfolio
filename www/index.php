@@ -55,6 +55,6 @@
 
         <script src="javascript/themes.js"></script>
         <script src="javascript/lang.js"></script>
-        <script src="javascript/responsive-menu.js"></script>
+        <script src="javascript/responsive-nav.js"></script>
     </body>
 </html>

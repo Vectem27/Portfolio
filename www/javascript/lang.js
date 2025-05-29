@@ -3,8 +3,6 @@ const currentLang = localStorage.getItem('lang') || 'fr';
 
 function applyTranslations(translations) 
 {
-    
-    // Par ID
     if (translations.id) 
     {
         for (const [key, value] of Object.entries(translations.id)) 
@@ -15,7 +13,6 @@ function applyTranslations(translations)
         }
     }
 
-    // Par balise (tag)
     if (translations.tag) 
     {
         for (const [tag, value] of Object.entries(translations.tag)) 
@@ -26,7 +23,6 @@ function applyTranslations(translations)
         }
     }
 
-    // Par classe
     if (translations.class) 
     {
         for (const [cls, value] of Object.entries(translations.class)) 
@@ -48,7 +44,7 @@ function loadTranslations(lang)
             applyTranslations(translations);
         })
         .catch(() => {
-            console.error(`Erreur chargement langue: ${lang}`);
+            console.error(`Failed to change language: ${lang}`);
         });
 }
 
