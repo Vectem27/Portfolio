@@ -27,7 +27,7 @@
         </nav>
 
         <main>
-            <article id="presentation-article">
+            <article id="presentation">
                 <p id="pre-title"></p>
                 <h1>Martin BOURNAT</h1>
                 <pre id="quick-presentation"></pre>
@@ -40,14 +40,67 @@
                         <span class="icon"></span>
                         Linkedin
                     </a>
+                    <a href="mailto:bournatmv@gmail.com" id="link-mail">
+                        <span class="icon"></span>
+                        bournatmv@gmail.com
+                    </a>
                 </div>
             </article>
             <img src="resources/images/profile_picture.jpg" alt="profile picture" width="200" height="200"/>
         </main>
 
-        <section>
-
+        <section id="skills">
+            <h2>Compétences</h2>
+            <div id="skill-articles-container">
+                <article>
+                    <h3 id="languages">Langages</h3>
+                    <li>
+                        <ul class="c">
+                            <img src="resources/images/c.png" alt="" class="logo">
+                            C
+                        </ul>
+                        <ul class="cpp">
+                            <img src="resources/images/cpp.svg" alt="" class="logo">
+                            C++
+                        </ul>
+                        <ul class="java">
+                            <img src="resources/images/java.svg" alt="" class="logo">
+                            Java
+                        </ul>
+                    </li>
+                </article>
+                <article>
+                    <h3 id="frameworks-libraries">Frameworks et librairies</h3>
+                    <li>
+                        <ul class="vulkan">
+                            <img src="resources/images/vulkan.svg" alt="" class="logo">
+                            Vulkan
+                        </ul>
+                        <ul class="wxwidgets">
+                            <img src="resources/images/wxwidgets.png" alt="" class="logo">
+                            wxWidgets
+                        </ul>
+                    </li>
+                </article>
+                <article>
+                    <h3 id="softwares-other">Logiciels et autres</h3>
+                    <li>
+                        <ul class="unreal-engine">
+                            <img src="resources/images/unreal-engine.png" alt="" class="logo">
+                            Unreal Engine
+                        </ul>
+                        <ul class="cmake">
+                            <img src="resources/images/cmake.svg" alt="" class="logo">
+                            Cmake
+                        </ul>
+                    </li>
+                </article>
+            </div>
         </section>
+
+        <section id="projects">
+        </section>
+
 
         <footer>
             <p>Copyright © 2025 Martin BOURNAT. All rights reserved.</p>
