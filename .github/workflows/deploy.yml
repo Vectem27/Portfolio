@@ -23,9 +23,14 @@ jobs:
       - name: Deploy to server via SSH
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            cd /home/${{ secrets.SERVER_USER }}/portfolio || git clone git@github.com:Vectem27/Portfolio.git .
+            if [ -d /home/${{ secrets.SERVER_USER }}/portfolio/.git ]; then
+              cd /home/${{ secrets.SERVER_USER }}/portfolio && git pull
+            else
+              rm -rf /home/${{ secrets.SERVER_USER }}/portfolio
+              git clone git@github.com:Vectem27/Portfolio.git /home/${{ secrets.SERVER_USER }}/portfolio
+            fi
+
             cd /home/${{ secrets.SERVER_USER }}/portfolio
-            git pull
             docker compose pull || true
             docker compose build
             docker compose up -d --remove-orphans
