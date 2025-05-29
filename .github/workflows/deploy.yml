@@ -1,0 +1,40 @@
+name: Deploy Docker site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Copy files to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          source: "."
+          target: "/home/deploy/nouveau-site"
+
+      - name: SSH - Build and restart Docker container
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          script: |
+            cd /home/deploy/nouveau-site
+            docker build -t nouveau-site:latest .
+            if [ $(docker ps -q -f name=nouveau-site) ]; then
+              docker stop nouveau-site
+              docker rm nouveau-site
+            fi
+            docker run -d --name nouveau-site -p 8080:80 nouveau-site:latest
