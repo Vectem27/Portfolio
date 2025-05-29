@@ -1,6 +1,9 @@
 {
   "id": {
-    "toggle-theme-btn": "Change Theme"
+    "toggle-theme-btn": "Change Theme",
+    "pre-title": "Hello, I'm",
+    "quick-presentation": "Student in computer science and passionate about this field since a young age. \nAt 14, I started creating my own programs in Java and C ! \nI quickly specialized in software and video game development. (Since 2021)"
+  
   },
   "tag": {
   },
