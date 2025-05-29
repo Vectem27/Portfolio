@@ -40,6 +40,7 @@ body{
 
 p, pre, a{
   text-wrap: pretty;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -173,7 +174,7 @@ pre{
   text-wrap-mode: wrap;
 }
 
-:is(select, button, article#presentation a){
+:is(select, button, .button){
   background-color: var(--color-elem);
 
   border-color: var(--color-elem-border);
@@ -192,12 +193,12 @@ pre{
   justify-content: center; /* (optionnel) centre horizontalement */
 }
 
-:is(select, button, article#presentation a):hover{
+:is(select, button, .button):hover{
   background-color: var(--color-elem-hovered);
   border-color: var(--color-elem-border-hovered);
 }
 
-:is(select, button, article#presentation a):focus{  
+:is(select, button, .button):focus{  
   outline: none;
   background-color: var(--color-elem-selected);
   border-color: var(--color-elem-border-hovered);
@@ -236,9 +237,6 @@ nav{
   align-items: center;
 }
 
-nav > *{
-    display: inline-flex;
-}
 
 nav > :nth-last-child(2) {
   margin-left: auto;
@@ -355,13 +353,13 @@ main > img{
   margin: 0.5rem 0;
 }
 
-a{
+article#presentation a{
   display: flex;
   text-decoration: none;
   gap: 0.5rem;
 }
 
-a > .icon{
+article#presentation a > .icon{
   width: 1.5rem;
   height: 1.5rem;
   background-color: var(--color-text);

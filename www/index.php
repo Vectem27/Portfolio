@@ -17,6 +17,9 @@
             <button id="nav-hamburger"><span class="icon"></span></button>
 
             <!--LOGO (optional)-->
+            <a href="#presentation" id="presentation-link-button" class="button nav-element">Présentation</a>
+            <a href="#skills" id="skills-link-button" class="button nav-element">Compétences</a>
+            <a href="#projects" id="projects-link-button" class="button nav-element">Projets</a>
             
             <button id="toggle-theme-btn" class="nav-element">Changer le thème</button>
             
@@ -26,7 +29,7 @@
             </select>
         </nav>
 
-        <main>
+        <main id="presentation">
             <article id="presentation">
                 <p id="pre-title">Bonjour, je m'appelle</p>
                 <h1>Martin BOURNAT</h1>
@@ -34,15 +37,15 @@
 Dés 14 ans j'ai commencer à crée mes propres progammes en java et en C ! 
 Je me suis rapidement spécialisé dans le développement logiciel et de jeux vidéo. (En 2021)</pre>
                 <div class="links">
-                    <a href="https://github.com/Vectem27" target="_blank" id="link-github">
+                    <a href="https://github.com/Vectem27" target="_blank" id="link-github" class="button">
                         <span class="icon"></span>
                         Github
                     </a>
-                    <a href="https://www.linkedin.com/in/martin-bournat-60a779283" target="_blank" id="link-linkedin">
+                    <a href="https://www.linkedin.com/in/martin-bournat-60a779283" target="_blank" id="link-linkedin" class="button">
                         <span class="icon"></span>
                         Linkedin
                     </a>
-                    <a href="mailto:bournatmv@gmail.com" id="link-mail">
+                    <a href="mailto:bournatmv@gmail.com" id="link-mail" class="button">
                         <span class="icon"></span>
                         bournatmv@gmail.com
                     </a>
