@@ -16,7 +16,7 @@
         <nav>
             <!--LOGO (optional)-->
             
-            <button id="toggle-theme-btn"></button>
+            <button id="toggle-theme-btn">Changer le thème</button>
             
             <select id="language-select">
                 <option value="fr">Français</option>
