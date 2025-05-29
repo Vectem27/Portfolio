@@ -14,7 +14,7 @@
     </head>
     <body>
         <nav>
-            <button id="nav-hamburger"></button>
+            <button id="nav-hamburger"><span class="icon"></span></button>
 
             <!--LOGO (optional)-->
             

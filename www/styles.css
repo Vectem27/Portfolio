@@ -248,6 +248,25 @@ nav > :not(.nav-element){
   display: none !important;
 }
 
+#nav-hamburger .icon{
+  -webkit-mask-image: url(resources/images/menu.svg);
+  mask-image: url(resources/images/menu.svg);
+  mask-size: 1.125rem;
+  
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-text);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+#nav-hamburger.open .icon{
+  -webkit-mask-image: url(resources/images/close.svg);
+  mask-image: url(resources/images/close.svg);
+}
+
+
 /* Display hamburger for small screens*/
 @media screen and (max-width: 768px){
     nav{

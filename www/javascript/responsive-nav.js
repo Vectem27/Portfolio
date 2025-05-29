@@ -1,9 +1,11 @@
 document.getElementById('nav-hamburger').addEventListener('click', () => {
     document.getElementsByTagName('nav')[0].classList.toggle('open');
 
-    const elements = document.querySelectorAll('nav .nav-element');
+    const navElem = document.querySelectorAll('nav .nav-element');
 
-    elements.forEach(el => {
+    document.getElementById('nav-hamburger').classList.toggle('open');
+
+    navElem.forEach(el => {
         if (el.classList.contains('nav-element')) 
             el.classList.toggle('nav-element-force-visible');
     });
