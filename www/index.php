@@ -17,9 +17,9 @@
             <button id="nav-hamburger"><span class="icon"></span></button>
 
             <!--LOGO (optional)-->
-            <a href="#presentation" id="presentation-link-button" class="button nav-element">Présentation</a>
-            <a href="#skills" id="skills-link-button" class="button nav-element">Compétences</a>
-            <a href="#projects" id="projects-link-button" class="button nav-element">Projets</a>
+            <a href="#presentation" id="presentation-link-button" class="button nav-element close-menu-action">Présentation</a>
+            <a href="#skills" id="skills-link-button" class="button nav-element close-menu-action">Compétences</a>
+            <a href="#projects" id="projects-link-button" class="button nav-element close-menu-action">Projets</a>
             
             <button id="toggle-theme-btn" class="nav-element">Changer le thème</button>
             

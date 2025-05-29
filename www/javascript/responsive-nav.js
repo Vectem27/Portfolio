@@ -17,7 +17,7 @@ const navbar = document.querySelector('nav');
 
 function closeNavbar() {
     document.getElementById('nav-hamburger').classList.toggle('open');
-    
+
     navbar.classList.remove('open');
 
     const navElem = document.querySelectorAll('nav .nav-element');
@@ -27,13 +27,13 @@ function closeNavbar() {
     });
 }
 
-navbar.querySelectorAll(':is(a, button).nav-element').forEach(el => {
+navbar.querySelectorAll(':is(a, button).close-menu-action').forEach(el => {
     el.addEventListener('click', () => {
         closeNavbar();
     });
 });
 
-navbar.querySelectorAll('select.nav-element').forEach(el => {
+navbar.querySelectorAll('select.close-menu-action').forEach(el => {
     el.addEventListener('change', () => {
         closeNavbar();
     });
