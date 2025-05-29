@@ -24,7 +24,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
             cd /home/${{ secrets.SERVER_USER }}/portfolio
-            docker-compose pull || true
-            docker-compose build
-            docker-compose up -d --remove-orphans
+            docker compose pull || true
+            docker compose build
+            docker compose up -d --remove-orphans
           EOF
