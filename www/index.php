@@ -1,5 +1,5 @@
 <?php
-
+    //TODO: Translate from the backend instead of javascript frontend
 ?>
 
 <!DOCTYPE html>
@@ -28,9 +28,11 @@
 
         <main>
             <article id="presentation">
-                <p id="pre-title"></p>
+                <p id="pre-title">Bonjour, je m'appelle</p>
                 <h1>Martin BOURNAT</h1>
-                <pre id="quick-presentation"></pre>
+                <pre id="quick-presentation">Étudiant en licence d'informatique, et passioné de ce domaine depuis mon plus jeune âge. 
+Dés 14 ans j'ai commencer à crée mes propres progammes en java et en C ! 
+Je me suis rapidement spécialisé dans le développement logiciel et de jeux vidéo. (En 2021)</pre>
                 <div class="links">
                     <a href="https://github.com/Vectem27" target="_blank" id="link-github">
                         <span class="icon"></span>
