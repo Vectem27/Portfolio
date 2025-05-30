@@ -56,7 +56,7 @@ Je me suis rapidement spécialisé dans le développement logiciel et de jeux vi
 
         <section id="skills">
             <h2>Compétences</h2>
-            <div id="skill-articles-container">
+            <div id="skill-articles-container" class="articles-container">
                 <article>
                     <h3 id="languages">Langages</h3>
                     <li>
@@ -104,6 +104,33 @@ Je me suis rapidement spécialisé dans le développement logiciel et de jeux vi
         </section>
 
         <section id="projects">
+            <h2>Projets</h2>
+            <div id="project-articles-container" class="articles-container">
+                <article id="wonderwares">
+                    <h3>Wonderwares</h3>
+                    <p class="small">Wonderwares est un jeux-video que j'ai imaginé, conçu et developpé entièrement.</p>
+                    <p class="small">Dans ce jeu, vous incarnez un personnage de fantaisie dans un univers mediévale où vous deverez gérer un échoppe.</p>
+                    <h4>Apport</h4>
+                    <p class="small">Depuis son lancement en novembre 2024, ce projet (qui est toujours en cours), m'as permis de prefectionner diverse compétences comme :</p>
+                    <pre class="tiny">
+ - Le game design
+ - L'architecture logiciel (SOLID & Clean architecture)
+ - La programation modulaire
+ - L'organisation des taches
+                    </pre>
+                </article>
+                <article id="volantistale">
+                    <h3>Volantis tale</h3>
+                    <p class="small">Volantis tale est un jeu multi-joueur aliant actions, aventures et combat dans un univers de quêtes et de magie.</p>
+                    <h4>Apport</h4>
+                    <p class="small">Bien que les serveurs de ce projet soient désormais fermées, pendant son développement (de octobre 2023 à mai 2024) plusieurs personnes suivaient activement l'avancé de ce projet. Ce projet de grand envergure, était pour moi un défis à mettre en place et m'as permis d'apprendre :</p>
+                    <pre class="tiny">
+ - A bâtire un communauté
+ - La réplication reseau dans les jeux vidéos
+ - Le developpement c++ sous Unreal Engine
+                    </pre>
+                </article>
+            </div>
         </section>
 
 
