@@ -477,7 +477,7 @@ img.logo{
 
 #project-articles-container{
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
