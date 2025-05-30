@@ -512,9 +512,13 @@ img.logo{
 }
 
 article#wonderwares{
-  background-image: var(--project-article-image-gradient), url('resources/images/project/wonderwares1.webp');
+  background-image: var(--project-article-image-gradient), url('resources/images/project/wonderwares.webp');
 }
 
 article#volantistale{
   background-image: var(--project-article-image-gradient), url('resources/images/project/volantistale.webp');
+}
+
+article#wxvulkanengine{
+  background-image: var(--project-article-image-gradient), url('resources/images/project/wxvulkanengine.webp');
 }
