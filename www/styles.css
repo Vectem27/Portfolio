@@ -68,7 +68,7 @@ h4, h5, h6 {
 }
 
 /* Petits textes */
-small, .caption, .note {
+small, .caption, .note, .small {
   font-size: 0.875rem; /* 14px */
 }
 
@@ -152,6 +152,11 @@ button, select, input, textarea {
 
 /* Custom */
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.25rem;
+}
+
 body 
 {
   background-color: var(--color-bg);
@@ -160,6 +165,8 @@ body
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+
+  
 }
 
 p, pre, a{
@@ -404,15 +411,15 @@ footer{
   justify-content: center;
 }
 
-section#skills{
+section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 10%;
+  padding: 1rem 5%;
   gap: 1rem;
 }
 
-#skill-articles-container{
+.articles-container{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -420,11 +427,11 @@ section#skills{
   gap: 2rem;
 }
 
-#skill-articles-container > article{
+.articles-container > article{
   flex-grow: 1;
   flex-shrink: 1;
 
-  min-width: max-content;
+  min-width: min-content;
 
   padding: 0.5rem 1rem;
 
@@ -466,4 +473,48 @@ img.logo{
   width: 2rem;
   height: auto;
   display: inline-flex;
+}
+
+#project-articles-container{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#project-articles-container > article{
+  --image-height: 200px;
+
+  min-height: 500px;
+  max-width: calc(var(--image-height) * 16/9);
+  
+
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+  --project-article-image-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0) calc(var(--image-height) - var(--image-height)/3), var(--color-elem) var(--image-height));;
+  padding-top: calc(var(--image-height) + 1rem);
+
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+}
+
+#project-articles-container > article > *{
+  max-width: calc(var(--image-height) * 16/9 - 1rem);
+}
+
+#project-articles-container > article li{
+  list-style-type: none;
+}
+
+article#wonderwares{
+  background-image: var(--project-article-image-gradient), url('resources/images/project/wonderwares1.webp');
+}
+
+article#volantistale{
+  background-image: var(--project-article-image-gradient), url('resources/images/project/volantistale.webp');
 }
