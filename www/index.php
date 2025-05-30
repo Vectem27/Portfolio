@@ -130,6 +130,19 @@ Je me suis rapidement spécialisé dans le développement logiciel et de jeux vi
  - Le developpement c++ sous Unreal Engine
                     </pre>
                 </article>
+                <article id="wxvulkanengine">
+                    <h3>WxVulkanEngine</h3>
+                    <p class="small">WxVulkanEngine est commme son nom l'indique, un moteur de jeu que j'ai crée avec wxWidgets et l'api de rendu Vulkan.</p>
+                    <p class="small">Dans ce moteur j'ai mis en place la géstion d'un scene avec une hierarchie en arborescence des objets (avec transformations relative) et un abstraction complete du RHI (moteur de rendu) ce qui permet l'ajout d'autre api graphiques pour le rendu.</p>
+                    <h4>Apport</h4>
+                    <pre class="tiny">
+ - Architecture modulaire
+ - Gestion d'une pipeline de rendu
+ - Optimisation logiciel
+ - Rendu multi-passes avec géstion dynamique des lumières, des ombres et du post-processing
+ - Création et compilation multi-platforme
+                    </pre>
+                </article>
             </div>
         </section>
 
