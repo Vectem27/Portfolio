@@ -20,7 +20,7 @@ Je me suis rapidement spécialisé dans le développement logiciel et de jeux vi
             </a>
         </div>
     </article>
-    <img src="resources/images/profile_picture.jpg" alt="profile picture" width="200" height="200"/>
+    <img src="pages/home/resources/images/profile_picture.jpg" alt="profile picture" width="200" height="200"/>
 </section>
 
 <section id="skills">
@@ -30,15 +30,15 @@ Je me suis rapidement spécialisé dans le développement logiciel et de jeux vi
             <h3 id="languages">Langages</h3>
             <li>
                 <ul class="c">
-                    <img src="resources/images/c.png" alt="" class="logo">
+                    <img src="pages/home/resources/images/c.png" alt="" class="logo">
                     C
                 </ul>
                 <ul class="cpp">
-                    <img src="resources/images/cpp.svg" alt="" class="logo">
+                    <img src="pages/home/resources/images/cpp.svg" alt="" class="logo">
                     C++
                 </ul>
                 <ul class="java">
-                    <img src="resources/images/java.svg" alt="" class="logo">
+                    <img src="pages/home/resources/images/java.svg" alt="" class="logo">
                     Java
                 </ul>
             </li>
@@ -47,11 +47,11 @@ Je me suis rapidement spécialisé dans le développement logiciel et de jeux vi
             <h3 id="frameworks-libraries">Frameworks et librairies</h3>
             <li>
                 <ul class="vulkan">
-                    <img src="resources/images/vulkan.svg" alt="" class="logo">
+                    <img src="pages/home/resources/images/vulkan.svg" alt="" class="logo">
                     Vulkan
                 </ul>
                 <ul class="wxwidgets">
-                    <img src="resources/images/wxwidgets.png" alt="" class="logo">
+                    <img src="pages/home/resources/images/wxwidgets.png" alt="" class="logo">
                     wxWidgets
                 </ul>
             </li>
@@ -60,11 +60,11 @@ Je me suis rapidement spécialisé dans le développement logiciel et de jeux vi
             <h3 id="softwares-other">Logiciels et autres</h3>
             <li>
                 <ul class="unreal-engine">
-                    <img src="resources/images/unreal-engine.png" alt="" class="logo">
+                    <img src="pages/home/resources/images/unreal-engine.png" alt="" class="logo">
                     Unreal Engine
                 </ul>
                 <ul class="cmake">
-                    <img src="resources/images/cmake.svg" alt="" class="logo">
+                    <img src="pages/home/resources/images/cmake.svg" alt="" class="logo">
                     Cmake
                 </ul>
             </li>

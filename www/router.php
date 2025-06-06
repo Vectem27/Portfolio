@@ -9,9 +9,11 @@ function route_request_main()
     }
 }
 
-function import_page_style() 
-{
-    echo '<link rel="stylesheet" href="' . route_request('style.css') .'" />';
+function import_page_style() {
+    $stylePath = get_route_style('style.css');
+    if ($stylePath !== "") {
+        echo '<link rel="stylesheet" href="' . htmlspecialchars($stylePath) . '">' . PHP_EOL;
+    }
 }
 
 
@@ -41,25 +43,20 @@ function route_request($name) : bool
     return false;
 }
 
-function get_route_style($name = 'style.css') : string
-{
-    $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    $path = trim($path, '/');
+function get_route_style($file = 'style.css') : string {
+    $uriPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uriPath = trim($uriPath, '/'); // ex: project/proj1
 
-    if ($path === '') 
-    {
-        $path = 'home';
+    if ($uriPath === '') {
+        $uriPath = 'home';
     }
 
-    $file = __DIR__ . '/pages/' . $path . '/' . $name;
+    $webPath = "/pages/$uriPath/$file"; // pour href
+    $localPath = __DIR__ . $webPath;    // pour vérification sur disque
 
-    echo $file;
-
-    $realBase = realpath(__DIR__ . '/pages');
-    $realFile = realpath($file);
-
-    if ($realFile && strpos($realFile, $realBase) === 0 && file_exists($realFile)) 
-        return $realFile;
+    if (file_exists($localPath)) {
+        return $webPath;
+    }
 
     return "";
 }
