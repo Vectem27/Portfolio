@@ -305,7 +305,7 @@ nav > :not(.nav-element){
 }
 
 
-main{
+#presentation-section{
   padding: 1rem;
   padding-top: 6.5rem;
 
@@ -329,7 +329,7 @@ main{
 }
 
 
-main > article{
+#presentation-section > article{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -345,7 +345,7 @@ main > article{
   }
 }
 
-main > img{
+#presentation-section > img{
   margin: 2rem;
   border-radius: 50%;
   aspect-ratio: 1;
