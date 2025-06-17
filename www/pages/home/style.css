@@ -70,19 +70,19 @@ article#presentation a > .icon{
 }
 
 #link-github .icon{
-  -webkit-mask-image: url(resources/images/github.svg);
-  mask-image: url(resources/images/github.svg);
+  -webkit-mask-image: url('/pages/home/resources/images/github.svg');
+  mask-image: url('/pages/home/resources/images/github.svg');
 }
 
 #link-linkedin .icon{
-  -webkit-mask-image: url(resources/images/linkedin.svg);
-  mask-image: url(resources/images/linkedin.svg);
+  -webkit-mask-image: url('/pages/home/resources/images/linkedin.svg');
+  mask-image: url('/pages/home/resources/images/linkedin.svg');
   mask-size: 1.125rem;
 }
 
 #link-mail .icon{
-  -webkit-mask-image: url(resources/images/mail.svg);
-  mask-image: url(resources/images/mail.svg);
+  -webkit-mask-image: url('/pages/home/resources/images/mail.svg');
+  mask-image: url('/pages/home/resources/images/mail.svg');
   mask-size: 1.125rem;
 }
 
@@ -192,13 +192,13 @@ img.logo{
 }
 
 article#wonderwares{
-  background-image: var(--project-article-image-gradient), url('resources/images/project/wonderwares.webp');
+  background-image: var(--project-article-image-gradient), url('/resources/images/project/wonderwares.webp');
 }
 
 article#volantistale{
-  background-image: var(--project-article-image-gradient), url('resources/images/project/volantistale.webp');
+  background-image: var(--project-article-image-gradient), url('/resources/images/project/volantistale.webp');
 }
 
 article#wxvulkanengine{
-  background-image: var(--project-article-image-gradient), url('resources/images/project/wxvulkanengine.webp');
+  background-image: var(--project-article-image-gradient), url('/resources/images/project/wxvulkanengine.webp');
 }

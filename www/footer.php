@@ -1,3 +1,3 @@
 <footer>
-    <p>Copyright © 2025 Martin BOURNAT. All rights reserved.</p>
+    <p><?php echo_loc_text('footer')?></p>
 </footer>
