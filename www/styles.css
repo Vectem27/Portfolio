@@ -254,6 +254,19 @@ nav > :not(.nav-element){
   display: none !important;
 }
 
+nav
+{
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 1);
+}
+
+[data-theme="light"] 
+{
+  nav
+  {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
 #nav-hamburger .icon{
   -webkit-mask-image: url(resources/images/menu.svg);
   mask-image: url(resources/images/menu.svg);
