@@ -1,0 +1,31 @@
+{
+    "nav-section-presentation": "About Me",
+    "nav-section-skills": "Skills",
+    "nav-section-projects": "Projects",
+
+    "pre-title": "Hello, I'm",
+    "quick-presentation": "Computer science undergraduate, passionate about development since a very young age.\nAt 14, I began creating my own programs in Java and C.\nSince 2021, I have specialized in software development and video game creation.",
+
+    "skills-title": "Skills",
+
+    "languages-known-title": "Programming Languages",
+    "frameworks-known-title": "Frameworks and Libraries",
+    "softwares-known-title": "Software and Tools",
+
+    "projects-title": "Projects",
+
+    "project-experience-gained-title": "Experience Gained",
+
+    "wonderwares-presentation-p1": "Wonderwares is a video game I fully imagined, designed, and developed myself.",
+    "wonderwares-presentation-p2": "In this game, you play as a fantasy character in a medieval world where you manage your own shop.",
+    "wonderwares-experience-gained": "Since its launch in November 2024, this ongoing project has allowed me to improve several key skills such as:",
+    "wonderwares-experience-gained-list": " - Game design\n - Software architecture (SOLID & Clean Architecture)\n - Modular programming\n - Task organization",
+
+    "volantistale-presentation": "Volantis Tale is a multiplayer game combining action, adventure, and combat in a magical quest-filled universe.",
+    "volantistale-experience-gained": "Although the servers for this project are now closed, during its development (from October 2023 to May 2024), several people actively followed its progress. This large-scale project was a major challenge for me and helped me learn:",
+    "volantistale-experience-gained-list": " - How to build a community\n - Network replication in video games\n - C++ development using Unreal Engine",
+
+    "wxvulkanengine-presentation-p1": "WxVulkanEngine, as the name suggests, is a game engine I created using wxWidgets and the Vulkan rendering API.",
+    "wxvulkanengine-presentation-p2": "In this engine, I implemented scene management with a tree-structured object hierarchy (with relative transformations), and a full abstraction of the RHI (Rendering Hardware Interface), making it possible to add other rendering APIs.",
+    "wxvulkanengine-experience-gained-list": " - Modular architecture\n - Render pipeline management\n - Software optimization\n - Multipass rendering with dynamic light, shadow, and post-processing management\n - Cross-platform creation and compilation"
+}

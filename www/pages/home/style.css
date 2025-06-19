@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: 0.75rem;
   margin: 0.5rem 0;
 }
 
@@ -70,19 +70,19 @@ article#presentation a > .icon{
 }
 
 #link-github .icon{
-  -webkit-mask-image: url(resources/images/github.svg);
-  mask-image: url(resources/images/github.svg);
+  -webkit-mask-image: url('/pages/home/resources/images/github.svg');
+  mask-image: url('/pages/home/resources/images/github.svg');
 }
 
 #link-linkedin .icon{
-  -webkit-mask-image: url(resources/images/linkedin.svg);
-  mask-image: url(resources/images/linkedin.svg);
+  -webkit-mask-image: url('/pages/home/resources/images/linkedin.svg');
+  mask-image: url('/pages/home/resources/images/linkedin.svg');
   mask-size: 1.125rem;
 }
 
 #link-mail .icon{
-  -webkit-mask-image: url(resources/images/mail.svg);
-  mask-image: url(resources/images/mail.svg);
+  -webkit-mask-image: url('/pages/home/resources/images/mail.svg');
+  mask-image: url('/pages/home/resources/images/mail.svg');
   mask-size: 1.125rem;
 }
 
@@ -120,7 +120,6 @@ section{
   border-width: 0px;
 
   color: var(--color-text);
-
 
   /* Content */
   display: flex;
@@ -173,14 +172,25 @@ img.logo{
   background-repeat: no-repeat;
 
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 
   --project-article-image-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0) calc(var(--image-height) - var(--image-height)/3), var(--color-elem) var(--image-height));;
   padding-top: calc(var(--image-height) + 1rem);
+  padding-bottom: 1rem;
 
   display: flex;
   flex-flow: column wrap;
   gap: 0.5rem;
+}
+
+
+#project-articles-container > article > :is(pre,p)
+{
+  align-self: flex-start;
+}
+
+#project-articles-container > article > :is(pre)
+{
+  margin: 0 0.5rem !important;
 }
 
 #project-articles-container > article > *{
@@ -192,13 +202,13 @@ img.logo{
 }
 
 article#wonderwares{
-  background-image: var(--project-article-image-gradient), url('resources/images/project/wonderwares.webp');
+  background-image: var(--project-article-image-gradient), url('/pages/home/resources/images/project/wonderwares.webp');
 }
 
 article#volantistale{
-  background-image: var(--project-article-image-gradient), url('resources/images/project/volantistale.webp');
+  background-image: var(--project-article-image-gradient), url('/pages/home/resources/images/project/volantistale.webp');
 }
 
 article#wxvulkanengine{
-  background-image: var(--project-article-image-gradient), url('resources/images/project/wxvulkanengine.webp');
+  background-image: var(--project-article-image-gradient), url('/pages/home/resources/images/project/wxvulkanengine.webp');
 }
