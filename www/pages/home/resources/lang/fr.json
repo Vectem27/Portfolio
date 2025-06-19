@@ -2,6 +2,30 @@
     "nav-section-presentation": "Présentation",
     "nav-section-skills": "Compétences",
     "nav-section-projects": "Projets",
-    
-    "pre-title": "Bonjour, moi c'est"
+
+    "pre-title": "Bonjour, moi c'est",
+    "quick-presentation": "Étudiant en licence d’informatique, je suis passionné par le développement depuis mon plus jeune âge.\nÀ 14 ans, j’ai commencé à créer mes propres programmes en Java et en C.\nDepuis 2021, je me spécialise dans le développement logiciel et la création de jeux vidéo.",
+
+    "skills-title": "Compétences",
+
+    "languages-known-title": "Langages",
+    "frameworks-known-title": "Frameworks et bibliothèques",
+    "softwares-known-title": "Logiciels et autres",
+
+    "projects-title": "Projets",
+
+    "project-experience-gained-title": "Expérience acquise",
+
+    "wonderwares-presentation-p1": "Wonderwares est un jeu vidéo que j'ai imaginé, conçu et développé entièrement.",
+    "wonderwares-presentation-p2": "Dans ce jeu, vous incarnez un personnage de fantasy dans un univers médiéval où vous devez gérer une échoppe.",
+    "wonderwares-experience-gained": "Depuis son lancement en novembre 2024, ce projet (toujours en cours) m’a permis de perfectionner plusieurs compétences telles que :",
+    "wonderwares-experience-gained-list": " - Le game design\n - L’architecture logicielle (SOLID & Clean Architecture)\n - La programmation modulaire\n - L’organisation des tâches",
+
+    "volantistale-presentation": "Volantis Tale est un jeu multijoueur alliant action, aventure et combat dans un univers de quêtes et de magie.",
+    "volantistale-experience-gained": "Bien que les serveurs de ce projet soient désormais fermés, pendant son développement (d’octobre 2023 à mai 2024), plusieurs personnes suivaient activement son avancement. Ce projet de grande envergure représentait pour moi un véritable défi, et m’a permis d’apprendre :",
+    "volantistale-experience-gained-list": " - À bâtir une communauté\n - La réplication réseau dans les jeux vidéo\n - Le développement en C++ sous Unreal Engine",
+
+    "wxvulkanengine-presentation-p1": "WxVulkanEngine est, comme son nom l’indique, un moteur de jeu que j’ai créé avec wxWidgets et l’API de rendu Vulkan.",
+    "wxvulkanengine-presentation-p2": "Dans ce moteur, j’ai mis en place la gestion d’une scène avec une hiérarchie arborescente d’objets (avec transformations relatives), ainsi qu’une abstraction complète du RHI (moteur de rendu), permettant l’intégration d’autres APIs graphiques.",
+    "wxvulkanengine-experience-gained-list": " - Architecture modulaire\n - Gestion d’une pipeline de rendu\n - Optimisation logicielle\n - Rendu multipasse avec gestion dynamique des lumières, des ombres et du post-traitement\n - Création et compilation multiplateforme"
 }
