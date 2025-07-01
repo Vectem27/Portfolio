@@ -12,9 +12,9 @@
                 <span class="icon"></span>
                 Linkedin
             </a>
-            <a href="mailto:bournatmv@gmail.com" id="link-mail" class="button">
+            <a href="mailto:martin.bournat.pro@gmail.com" id="link-mail" class="button">
                 <span class="icon"></span>
-                bournatmv@gmail.com
+                martin.bournat.pro@gmail.com
             </a>
         </div>
     </article>
@@ -83,7 +83,7 @@
         </article>
         <article id="volantistale" class="shadowed">
             <h3>Volantis tale</h3>
-            <p class="small"><?php echo_loc_text('wonderwares-presentation')?></p>
+            <p class="small"><?php echo_loc_text('volantistale-presentation')?></p>
             <h4><?php echo_loc_text("project-experience-gained-title")?></h4>
             <p class="small"><?php echo_loc_text('volantistale-experience-gained')?></p>
             <pre class="tiny"><?php echo_loc_text('volantistale-experience-gained-list')?></pre>
