@@ -12,9 +12,9 @@
                 <span class="icon"></span>
                 Linkedin
             </a>
-            <a href="mailto:bournatmv@gmail.com" id="link-mail" class="button">
+            <a href="mailto:martin.bournat.pro@gmail.com" id="link-mail" class="button">
                 <span class="icon"></span>
-                bournatmv@gmail.com
+                martin.bournat.pro@gmail.com
             </a>
         </div>
     </article>
