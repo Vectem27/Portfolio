@@ -83,7 +83,7 @@
         </article>
         <article id="volantistale" class="shadowed">
             <h3>Volantis tale</h3>
-            <p class="small"><?php echo_loc_text('wonderwares-presentation')?></p>
+            <p class="small"><?php echo_loc_text('volantistale-presentation')?></p>
             <h4><?php echo_loc_text("project-experience-gained-title")?></h4>
             <p class="small"><?php echo_loc_text('volantistale-experience-gained')?></p>
             <pre class="tiny"><?php echo_loc_text('volantistale-experience-gained-list')?></pre>
