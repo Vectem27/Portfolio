@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy to server via SSH
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} -p {{ secrets.SERVER_SSH_PORT }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} -p ${{ secrets.SERVER_SSH_PORT }} << 'EOF'
             if [ -d /home/${{ secrets.SERVER_USER }}/portfolio/.git ]; then
               cd /home/${{ secrets.SERVER_USER }}/portfolio && git pull
             else
